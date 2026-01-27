@@ -33,3 +33,16 @@ Se listaron archivos y al encontrar el archivo con nombre '--spaces in this file
 
 ## Contraseña obtenida:
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+## Bandit Level 3
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un directorio con un archivo oculto
+**Comandos utilizados:**
+ls -a
+cd 'Directorio'
+cat 'Archivo'
+## Explicación:
+Se listaron archivos y al encontrar el directorio inhire me moví con cd, luego al listar vi que no se encontraba nada con ls, así que usé ls -a para listar los archivos y directorios, incluidos los ocultos, luego seguí el proceso del ejercicio anterior para leerlo con cat 'archivo'
+
+## Contraseña obtenida:
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
