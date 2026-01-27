@@ -13,6 +13,7 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ## Bandit Level 1
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en un archivo con nombre poco comun
+
 **Comandos utilizados:**
 ls
 cat ./-
@@ -25,6 +26,7 @@ Se listaron archivos y al encontrar el archivo con nombre - se uso cat./ para po
 ## Bandit Level 2
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en un archivo con nombre con espacios
+
 **Comandos utilizados:**
 ls
 cat -- 'Nombre del archivo'
@@ -37,6 +39,7 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ## Bandit Level 3
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en un directorio con un archivo oculto
+
 **Comandos utilizados:**
 ls -a
 cd 'Directorio'
