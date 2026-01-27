@@ -21,3 +21,15 @@ Se listaron archivos y al encontrar el archivo con nombre - se uso cat./ para po
 
 ## Contraseña obtenida:
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+## Bandit Level 2
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo con nombre con espacios
+**Comandos utilizados:**
+ls
+cat -- 'Nombre del archivo'
+## Explicación:
+Se listaron archivos y al encontrar el archivo con nombre '--spaces in this filename--0 se uso cat -- 'Archivo' para poder leer su contenido, ya que las comillas sirven para leer nombres con espacios pero cat detecta - como una opción, así que al poner -- se indica que no viene una opcion en lo siguiente.
+
+## Contraseña obtenida:
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
