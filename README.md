@@ -70,3 +70,29 @@ Se listaron archivos y al encontrar el directorio inhire me moví con cd, luego 
 
 ## Contraseña obtenida:
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+## Bandit Level 5
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel dentro de un montón de archivos y directorios, el correcto cumple: human-readable, 1033 bytes in size, not executable
+
+**Comandos utilizados:**
+ls
+
+ls -a
+
+cd Directorio
+
+cat Archivo
+
+find
+
+-type f
+
+-size 1033c
+
+! -executable
+## Explicación:
+Lo primero fue usar ls para listar el contenido, al ver que habían muchos directorios y archivos dentro, se utilizaron los siguientes comandos para encontrar el archivo que cumpliera con las condiciones establecidas: find . para buscar en el directorio actual, junto con los 3 comandos, -type f para filtrar solo por archivos, -size 1033c para filtrar solo los que tienen 1023 bytes de tamaño y ! -executable para filtrar también por los que no sos ejecutables, al ejecutar el comando me dio la ruta del archivo, así que me moví con cd al directorio correcto y al no encontrar el archivo con ls, usé ls -a para ver los ocultos y por último usé cat 'Archivo' para leer el contenido.
+
+## Contraseña obtenida:
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
