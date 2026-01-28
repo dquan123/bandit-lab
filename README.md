@@ -181,5 +181,21 @@ grep 'Cadena'
 Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el nombre de este, luego usé el comando strings 'data.txt' para extraer el texto legible del archivo, luego | para unir dos comandos, y luego grep '==' para filtrar por lo que precedía el patrón, que en este caso, eran al menos 2 signos de igual '=='. 
 
 
-##Contraseña obtenida:
+## Contraseña obtenida:
 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+## Bandit Level 10
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo que se encuentra codificado en base 64
+
+**Comandos utilizados:**
+
+ls
+
+base64 -d 'Archivo'
+## Explicación:
+Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el nombre de este, después usé el comando base64 -d 'data.txt', ya que base64 trabaja con base 64 y -d decodifica un archivo, esto me arrojó el texto decodificado con la contraseña.
+
+
+## Contraseña obtenida:
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
