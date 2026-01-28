@@ -136,3 +136,17 @@ Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el n
 
 ## Contraseña obtenida:
 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+## Bandit Level 8
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo con miles de datos con líneas que se repiten, la contraseña es la única que no se repite
+
+*Comandos utilizados:**
+ls
+
+sort 'Archivo' | uniq -u
+## Explicación:
+Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el nombre de este, luego usé el comando sort data.txt porque me di cuenta que uniq solo funciona de manera correcta si el archivo se encuentra ordenado, en la misma línea puse el caracter | para indicar la salida y finalmente uniq -u para mostrar las líneas que aparecen una sola vez en el archivo.
+
+## Contraseña obtenida:
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
