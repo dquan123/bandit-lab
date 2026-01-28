@@ -122,3 +122,17 @@ Lo primero fue ls -a para listar todo el contenido, incluidos los ocultos, al ve
 
 ## Contraseña obtenida:
 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+## Bandit Level 7
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo con miles de datos, la cual se encuentra junto a la palabra milionth
+
+**Comandos utilizados:**
+ls
+
+grep 'Palabra' 'Archivo'
+## Explicación:
+Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el nombre de este, luego usé el comando grep para imprimir la línea de un archivo en donde encuentre una palabra indicada, en este caso: grep 'millionth' 'data.txt' y esto imprimió la línea del archivo en donde encontró milionth, y ahí estaba la contraseña.
+
+## Contraseña obtenida:
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
