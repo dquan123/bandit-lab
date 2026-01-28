@@ -96,3 +96,29 @@ Lo primero fue usar ls para listar el contenido, al ver que habían muchos direc
 
 ## Contraseña obtenida:
 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+## Bandit Level 6
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel dentro de todo el servidor, en un archivo que cumpla con lo siguiente: owned by user bandit7, owned by group bandit6, 33 bytes in size
+
+**Comandos utilizados:**
+ls
+
+ls -a
+
+cat 'ruta del archivo'
+
+find /
+
+-type f
+
+-size 33c
+
+-user bandit7
+
+-group bandit6
+## Explicación:
+Lo primero fue ls -a para listar todo el contenido, incluidos los ocultos, al ver que no había nada me di cuenta que el archivo estaba en cualquier lugar de todo el servidor, luego usé el comando find / para buscar alrededor de todo el servidor, y le apliqué filtros con los siguientes 4 comandos: -type f para buscar solo archivos, -size nc para el tamaño del arhivo en bytes, -user 'Usuario' para el usuario al que pertenece el archivo y 'group 'Grupo' para el grupo al que pertenece el archivo. Al ejecutarlo me dio la ruta completa y ya que no está en el directorio actual usé cat 'Ruta completa en el servidor del archivo' para leer su contenido.
+
+## Contraseña obtenida:
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
