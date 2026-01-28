@@ -49,3 +49,17 @@ Se listaron archivos y al encontrar el directorio inhire me moví con cd, luego 
 
 ## Contraseña obtenida:
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+## Bandit Level 4
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un directorio con archivos que no se pueden leer facilmente
+
+**Comandos utilizados:**
+ls
+cd 'Directorio'
+cat -- 'Archivo'
+## Explicación:
+Se listaron archivos y al encontrar el directorio inhire me moví con cd, luego al listar vi que habían varios archivos, usé cat -- 'Archivo' ya que los archivos iniciaban con - y necesitaba indicar que no venia una funcion luego de cat, leí uno por uno hasta encontrar el único con contenido leíble por el ojo humano y no con caracteres raros.
+
+## Contraseña obtenida:
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
