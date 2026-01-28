@@ -2,6 +2,7 @@
 **Objetivo:**  
 Encontrar la contraseña del siguiente nivel y hacer las conexiones para empezar a jugar
 **Comandos utilizados:**
+
 ls
 
 cat readme
@@ -16,6 +17,7 @@ ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 Encontrar la contraseña del siguiente nivel en un archivo con nombre poco comun
 
 **Comandos utilizados:**
+
 ls
 
 cat ./-
@@ -30,6 +32,7 @@ Se listaron archivos y al encontrar el archivo con nombre - se uso cat./ para po
 Encontrar la contraseña del siguiente nivel en un archivo con nombre con espacios
 
 **Comandos utilizados:**
+
 ls
 
 cat -- 'Nombre del archivo'
@@ -44,6 +47,7 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 Encontrar la contraseña del siguiente nivel en un directorio con un archivo oculto
 
 **Comandos utilizados:**
+
 ls -a
 
 cd 'Directorio'
@@ -60,6 +64,7 @@ Se listaron archivos y al encontrar el directorio inhire me moví con cd, luego 
 Encontrar la contraseña del siguiente nivel en un directorio con archivos que no se pueden leer facilmente
 
 **Comandos utilizados:**
+
 ls
 
 cd 'Directorio'
@@ -76,6 +81,7 @@ Se listaron archivos y al encontrar el directorio inhire me moví con cd, luego 
 Encontrar la contraseña del siguiente nivel dentro de un montón de archivos y directorios, el correcto cumple: human-readable, 1033 bytes in size, not executable
 
 **Comandos utilizados:**
+
 ls
 
 ls -a
@@ -102,6 +108,7 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 Encontrar la contraseña del siguiente nivel dentro de todo el servidor, en un archivo que cumpla con lo siguiente: owned by user bandit7, owned by group bandit6, 33 bytes in size
 
 **Comandos utilizados:**
+
 ls
 
 ls -a
@@ -128,6 +135,7 @@ morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 Encontrar la contraseña del siguiente nivel en un archivo con miles de datos, la cual se encuentra junto a la palabra milionth
 
 **Comandos utilizados:**
+
 ls
 
 grep 'Palabra' 'Archivo'
@@ -141,7 +149,8 @@ dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 **Objetivo:**
 Encontrar la contraseña del siguiente nivel en un archivo con miles de datos con líneas que se repiten, la contraseña es la única que no se repite
 
-*Comandos utilizados:**
+**Comandos utilizados:**
+
 ls
 
 sort 'Archivo' | uniq -u
