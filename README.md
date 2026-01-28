@@ -153,9 +153,33 @@ Encontrar la contraseña del siguiente nivel en un archivo con miles de datos co
 
 ls
 
-sort 'Archivo' | uniq -u
+sort 'Archivo' 
+
+| 
+
+uniq -u
 ## Explicación:
 Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el nombre de este, luego usé el comando sort data.txt porque me di cuenta que uniq solo funciona de manera correcta si el archivo se encuentra ordenado, en la misma línea puse el caracter | para indicar la salida y finalmente uniq -u para mostrar las líneas que aparecen una sola vez en el archivo.
 
 ## Contraseña obtenida:
 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+## Bandit Level 9
+**Objetivo:**
+Encontrar la contraseña del siguiente nivel en un archivo con varios datos que no son legibles, la contraseña es legible obviamente y está precedida por varios caracteres '='
+
+**Comandos utilizados:**
+
+ls
+
+strings 'Archivo'
+
+|
+
+grep 'Cadena'
+## Explicación:
+Lo primero fue ls para ver los archivos, en este caso solo era 1, con ls vi el nombre de este, luego usé el comando strings 'data.txt' para extraer el texto legible del archivo, luego | para unir dos comandos, y luego grep '==' para filtrar por lo que precedía el patrón, que en este caso, eran al menos 2 signos de igual '=='. 
+
+
+##Contraseña obtenida:
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
